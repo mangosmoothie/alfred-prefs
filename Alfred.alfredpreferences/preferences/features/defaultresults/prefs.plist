@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fallbacks</key>
+	<array>
+		<string>user.workflow.F56D5BCD-806C-43AA-92D0-1E199BBF245F.4172F6CD-CD6B-42D3-9AB4-19C2976EEB19</string>
+		<string>user.workflow.09F3DB5D-AC6B-470D-BE55-DCD9963B2063.4172F6CD-CD6B-42D3-9AB4-19C2976EEB19</string>
+	</array>
+	<key>showContacts</key>
+	<false/>
+</dict>
+</plist>
