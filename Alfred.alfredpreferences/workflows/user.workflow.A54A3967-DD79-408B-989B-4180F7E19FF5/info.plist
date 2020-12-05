@@ -29,7 +29,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>daemon-emacs-start</string>
+	<string>start emacs daemon</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -53,11 +53,11 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>daemon-emacs</string>
+				<string>daemon emacs</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>daemon-emacs</string>
+				<string>daemon emacs</string>
 				<key>withspace</key>
 				<false/>
 			</dict>

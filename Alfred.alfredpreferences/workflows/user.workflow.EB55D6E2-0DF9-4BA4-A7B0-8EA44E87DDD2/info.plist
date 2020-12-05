@@ -535,7 +535,7 @@
 	<key>description</key>
 	<string>Search Dash for query</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Dash</string>
 	<key>objects</key>
