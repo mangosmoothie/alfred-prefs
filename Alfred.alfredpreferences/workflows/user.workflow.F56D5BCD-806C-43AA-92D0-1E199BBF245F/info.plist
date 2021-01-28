@@ -62,7 +62,7 @@
 			<key>config</key>
 			<dict>
 				<key>browser</key>
-				<string>org.mozilla.firefoxdeveloperedition</string>
+				<string></string>
 				<key>spaces</key>
 				<string>+</string>
 				<key>url</key>

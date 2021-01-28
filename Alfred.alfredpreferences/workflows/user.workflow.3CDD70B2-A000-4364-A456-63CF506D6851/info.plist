@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>578503E9-2241-4C67-9D38-1062A86220F2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>99E879C2-CA5F-4F89-8535-7998AF1056ED</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>center focused window</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+
+tell application "Finder"	set screenSize to bounds of window of desktop	set screenHeight to item 4 of screenSize	set screenWidth to item 3 of screenSizeend telltell application "System Events"	set myFrontMost to name of first item of (processes whose frontmost is true)end telltry	tell application myFrontMost		set windowSize to bounds of window 1		set windowXl to item 1 of windowSize		set windowYt to item 2 of windowSize		set windowXr to item 3 of windowSize		set windowYb to item 4 of windowSize				set windowWidth to windowXr - windowXl				set windowHeight to windowYt - windowYb				set bounds of window 1 to {(screenWidth - windowWidth) / 2.0, (screenHeight + windowHeight) / 2.0, (screenWidth + windowWidth) / 2.0, (screenHeight - windowHeight) / 2.0}	end tellend try
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>99E879C2-CA5F-4F89-8535-7998AF1056ED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>center focused window</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>center focused window</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>578503E9-2241-4C67-9D38-1062A86220F2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>578503E9-2241-4C67-9D38-1062A86220F2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
+		<key>99E879C2-CA5F-4F89-8535-7998AF1056ED</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
