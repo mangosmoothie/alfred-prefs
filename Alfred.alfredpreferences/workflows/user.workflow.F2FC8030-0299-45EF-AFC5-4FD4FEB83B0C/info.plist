@@ -42,7 +42,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>EmacsClient</string>
+	<string>New EmacsClient</string>
 	<key>objects</key>
 	<array>
 		<dict>
